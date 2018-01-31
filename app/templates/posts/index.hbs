@@ -1,0 +1,4 @@
+{{#each posts as |post|}}
+    <h3>{{#link-to "posts.show" post}}{{post.title}}{{/link-to}}</h3>
+    <p>By: {{post.user.name}}</p>
+{{/each}}
